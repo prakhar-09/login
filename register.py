@@ -23,9 +23,9 @@ def final_balance(entries):
    n = float(entries['Number of Payments'].get())
    q = (1 + r)** n
    monthly = float(entries['Monthly Payment'].get())
-   q = (1 + r)** n
+   q = (2 + r)** n
    remaining = q * loan - ( (q - 1) / r) * monthly
-   remaining = ("%8.2f" % remaining).strip()
+   remaining = ("%8.5f" % remaining).strip()
    entries['Remaining Loan'].delete(0,END)
    entries['Remaining Loan'].insert(0, remaining )
    print("Remaining Loan: %f" % float(remaining))
