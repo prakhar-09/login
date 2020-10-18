@@ -50,11 +50,12 @@ label_3.place(x=70,y=230)
 
 Radiobutton(root, text="Male",padx = 5, variable=var, value=1).place(x=235,y=230)
 Radiobutton(root, text="Female",padx = 20, variable=var, value=2).place(x=290,y=230)
+Radiobutton(root, text="Not to say",padx = 35, variable=var, value=2).place(x=345,y=230)
 
 label_4 = Label(root, text="country",width=20,font=("bold", 10))
 label_4.place(x=70,y=280)
 
-list1 = ['Canada','India','UK','Nepal','Iceland','South Africa'];
+list1 = ['Canada','India','UK','Nepal','Iceland','South Africa','Japan'];
 
 droplist=OptionMenu(root,c, *list1)
 droplist.config(width=15)
@@ -67,6 +68,14 @@ var2= IntVar()
 Checkbutton(root, text="java", variable=var1).place(x=235,y=330)
 
 Checkbutton(root, text="python", variable=var2).place(x=290,y=330)
+
+Checkbutton(root, text="C++", variable=var2).place(x=345,y=330)
+
+Checkbutton(root, text="Flutter", variable=var2).place(x=400,y=330)
+
+Checkbutton(root, text="Web Development", variable=var2).place(x=455,y=330)
+
+Checkbutton(root, text="C#", variable=var2).place(x=510,y=330)
 
 
 
