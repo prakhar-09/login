@@ -10,6 +10,9 @@ def convert():
     value = float(ft_entry.get())
     meter = value * 0.3048
     mt_value.set("%.4f" % meter)
+def clear():
+    ft_value.set("")
+    mt_value.set("")
 
 
 
