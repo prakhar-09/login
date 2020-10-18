@@ -76,7 +76,7 @@ class calc:
   self.newdiv=self.div.decode('utf-8')
 
   #Generating Buttons
-  Button(master,text="=",width=10,command=lambda:self.equals()).grid(row=4, column=4,columnspan=2)
+ 
   Button(master,text='AC',width=3,command=lambda:self.clearall()).grid(row=1, column=4)
   Button(master,text='C',width=3,command=lambda:self.clear1()).grid(row=1, column=5)
   Button(master,text="+",width=3,command=lambda:self.action('+')).grid(row=4, column=3)
